@@ -136,6 +136,7 @@ message Footer {
  // 2 = Presto
  // 3 = Scritchley Go from https://github.com/scritchley/orc
  // 4 = Trino
+ // 5 = Haskell from https://github.com/HuwCampbell/orc-haskell
  optional uint32 writer = 9;
  // information about the encryption in this file
  optional Encryption encryption = 10;

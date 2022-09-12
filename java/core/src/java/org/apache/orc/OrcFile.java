@@ -132,6 +132,7 @@ public class OrcFile {
     PRESTO(2),   // Presto writer
     SCRITCHLEY_GO(3), // Go writer from https://github.com/scritchley/orc
     TRINO(4),   // Trino writer
+    HASKELL(5), // Haskell writer from https://github.com/HuwCampbell/orc-haskell
     UNKNOWN(Integer.MAX_VALUE);
 
     private final int id;
@@ -188,6 +189,9 @@ public class OrcFile {
 
     // Trino Writer
     TRINO_ORIGINAL(WriterImplementation.TRINO, 6),
+
+    // Haskell Writer (3rd Party)
+    HASKELL_ORIGINAL(WriterImplementation.HASKELL, 6),
 
     // Don't use any magic numbers here except for the below:
     FUTURE(WriterImplementation.UNKNOWN, Integer.MAX_VALUE); // a version from a future writer
